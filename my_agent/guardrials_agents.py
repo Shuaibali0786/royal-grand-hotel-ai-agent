@@ -4,14 +4,12 @@ from data_schema.my_data_output import MyDataOutPut
 from agents import Agent
 from data_schema.my_data_output import MyDataOutPut
 
-# ---------------- Input Guardrail Agent ----------------
 input_guardrail_agent = Agent(
     name="Input Guardrail Agent",
     instructions="Check if the given question is related to Royal Grand Hotel.",
     output_type=MyDataOutPut
 )
 
-# ---------------- Output Guardrail Agent ----------------
 output_guardrail_agent = Agent(
     name="Output Guardrail Agent",
     instructions="Check if the given hotel assistant's answer is only about Royal Grand Hotel and contains no unrelated or disallowed content.",
